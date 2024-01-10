@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    
+    <canvas id="draw"></canvas>
+
+    <script>
+        const canvas = document.getElementById("draw")
+        canvas.width = 850
+        canvas.height = 450
+        const ctx = canvas.getContext("2d")
+        ctx.strokestyle = "FF0000"
+        ctx.stroke()
+        ctx.moveto(400,400)
+        ctx.strokestyle = "#000000"
+        ctx.stroke
+
+    </script>
+</body>
+</html>

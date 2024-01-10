@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script>
+     const canvas = document.getElementById("canvas")
+     canvas.width = 500
+     canvas.height = 500
+     canvas.style.backgroundColor = "red"
+     const ctx = canvas.getContext("2d")
+     ctx.beginPath()
+     ctx.rect(0, 0, 200, 200)
+     ctx.stroke()
+             // Firkant 1 (øverst venstre)
+        // ctx.beginPath()
+        // ctx.rect(0, 0, 200, 200)
+        // ctx.stroke()
+    
+    </script>
+</body>
+</html>
