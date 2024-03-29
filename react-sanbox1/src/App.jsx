@@ -1,5 +1,10 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import Title from './components/Title'
+import Buttons from './components/Buttons'
+import Content from './components/Content'
+import Footer from './components/Footer'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,15 +23,12 @@ function App() {
   }, [count])
   return (
     <>
-        <h1>Usestate øvelse 1</h1>
-        <h2>Resultat av klikk {h2}.</h2>
-        <button onClick={()=>setCount(count + 0.5)}>+0.5</button>
-        <button onClick={()=>setCount(count + 1)}>+1</button>
-        <button onClick={()=>setCount(count + 10)}>+10</button>
-        <button onClick={()=>setCount(count - 0.5)}>-0.5</button>
-        <button onClick={()=>setCount(count - 1)}>-1</button>
-        <button onClick={()=>setCount(count - 10)}>-10</button>
-        <p>{count}</p>
+        <header><Title /></header>
+        <main>
+          <Buttons count={count} setCount={setCount} h2={h2} />
+          <Content count={count} />
+        </main>
+        <footer><Footer /></footer>
     </>
   )
 }
