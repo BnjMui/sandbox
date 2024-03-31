@@ -1,5 +1,5 @@
-export default function Content({count}){
+export default function Content({tempCount}){
     return(
-        <p>{count}</p>
+        <p>{tempCount}</p>
     )
 }
